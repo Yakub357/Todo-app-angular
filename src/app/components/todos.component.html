@@ -4,27 +4,34 @@
             type="text"
             name="inputTodo"
             placeholder="Create a new TODO..."
-            class="todo--input"
+            class="todos--input"
         />
         <input 
             type="submit"
             value="ADD"
-            class="todo--add"
+            class="todos--add"
         >
     </form>
-    <div>
-        <h2 class="todos--heading">Current Tasks</h2>
+    <div class="todos--heading">Current Tasks</div>
+    <div class="todos--wrapper">
         <ul class="todos--list">
             <li
-                class="todo"
+                class="todo completed"
             >
                 <div class="todo--toggle-btn"></div>
                 <div class="todo--content">This is Task #1 (not Completed)</div>
             </li>
+            <li
+                class="todo "
+            >
+                <div class="todo--toggle-btn"></div>
+                <div class="todo--content">This is Task #1 (Completed)</div>
+            </li>
+            
         </ul>
         <div class="todos--footer">
             <h2 class="todos--count">Total tasks: <span>3</span></h2>
-            <a class="todos--delete-btn">Clear Complete</a>
+            <a  href="#" class="todos--delete-btn">Clear Completed</a>
         </div>
     </div>
 </div>

@@ -1,0 +1,186 @@
+.todos {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todos form {
+    width: 72.2rem;
+    height: 7.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 6.4rem;
+}
+
+.todos--input, .todos--add {
+    font-family: inherit;
+    font-size: 3.2rem;
+    padding: 1.6rem 2.8rem 1.8rem 2.8rem;
+    color: #f5f5f5;
+    border: 2px solid transparent;
+
+    transition: app 0.3s ease;
+
+}
+
+.todos--input {
+    flex-grow: 3;
+
+    background-color: #ff8008;
+    
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.todos--input::placeholder {
+    color: #f5f5f5
+}
+
+.todos--input:focus {
+    outline: none;
+    border-color: #ea580c;
+    background-color: #f5f5f5;
+    color: #44403c;
+}
+
+.todos--add {
+    flex-grow: 1;
+    
+    background-color: #ea580c;
+
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.todos--add:hover {
+    background-color: #f5f5f5;
+    color: #ea580c;
+    border-color: #ea580c;
+}
+
+.todos--heading {
+    display: block;
+    width: 91rem;
+
+    font-size: 4.8rem;
+    color: #ea580c;
+    font-weight: 700;
+
+    margin-bottom: 1.2rem;
+}
+
+.todos--wrapper {
+    width: 72.2rem;
+    /* min-height: 22rem; */
+
+    background-color: #f5f5f5;
+}
+
+.todos--list {
+    list-style: none;
+    margin: 1.8rem 2rem 4.8rem;
+}
+
+.todo {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    border-bottom: 2px solid #ff8008;
+}
+
+.todo:hover {
+    border-bottom: 4px solid #ff8008;
+}
+
+.todo--toggle-btn {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid #ff8008;
+    margin-right: 1.2rem;
+}
+
+.todo:hover .todo--toggle-btn {
+    border-color: transparent;
+    background-color: #ff8008;
+}
+
+.todo--content {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-family: inherit;
+    color: #44403c;
+}
+
+.todo:hover .todo--content {
+    font-weight: 700;
+}
+
+.todo.completed {
+    border-color: #84cc16;
+}
+
+.todo.completed .todo--toggle-btn{
+    border-color: transparent;
+    background-color: #84cc16;
+    
+    background-image: url(./shape.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.todo.completed .todo--content {
+    color: #84cc16;
+    text-decoration: line-through;
+    text-decoration-color: #44403c;
+    text-decoration-thickness: 2px;
+}
+
+.todos--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1.2rem 2rem;
+    border: 2px solid #ff8008;                     
+}
+
+.todos--count {
+    color: #44403c;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.todos--count span {
+    font-weight: 700;
+}
+
+.todos--delete-btn {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #ff8008;
+    background-color: transparent;
+}
+
+.todos--delete-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+}
+
+.todos--delete-btn:active {
+    transform: translateY(0);
+}
