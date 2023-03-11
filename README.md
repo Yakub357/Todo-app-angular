@@ -1,4 +1,4 @@
-# TodoPractice
+# Todo App by CodingRaccoon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
 
@@ -10,18 +10,18 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+--- 
+## Description
+The current project was created in order to practice the main concepts of section-2 from [Angular Udemy course](https://www.udemy.com/course/the-complete-guide-to-angular-2/). These are component creation, Data Binding, and Directives. 
 
-## Running unit tests
+## Figma Design
+UI design implemented by [Coding Raccoon](https://github.com/Yakub357) and [FIGMA file is here](https://www.figma.com/proto/X6P4PjOr6q6sY5tf5Y8s8h/LiRacc?node-id=0%3A3&scaling=min-zoom&page-id=0%3A1). 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Styling 
+For css styling clean CSS is used with the defined class for the project. 
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Functionality 
+1. Data Binding functionality (Two-Way)
+2. *ngFor for rendering the TODO lists 
+3. Delete functionality implemented through filter the todos list with ".completed" class. 
