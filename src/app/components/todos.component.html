@@ -1,10 +1,11 @@
 <div class="todos">
-    <form>
+    <form (submit)="addTodo()">
         <input 
             type="text"
             name="inputTodo"
             placeholder="Create a new TODO..."
             class="todos--input"
+            [(ngModel)]="inputTodo"
         />
         <input 
             type="submit"
@@ -25,7 +26,7 @@
             </li>
         </ul>
         <div class="todos--footer">
-            <h2 class="todos--count">Total tasks: <span>3</span></h2>
+            <h2 class="todos--count">Total tasks: <span>{{todos.length}}</span></h2>
             <a  
                 class="todos--delete-btn"
                 (click)="onDelete()"

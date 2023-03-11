@@ -20,7 +20,7 @@ export class TodosComponent implements OnInit{
             }, 
             {
                 content: 'This is task #2 (completed)', 
-                completed: false, 
+                completed: true, 
             }
         ]
     }
@@ -36,5 +36,13 @@ export class TodosComponent implements OnInit{
 
     onDelete(): void  {
         this.todos = this.todos.filter((v) => !v.completed)
+    }
+
+    addTodo() {
+        this.todos.push({
+            content: this.inputTodo, 
+            completed: false
+        })
+        this.inputTodo = '';
     }
 }
