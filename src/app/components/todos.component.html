@@ -16,22 +16,21 @@
     <div class="todos--wrapper">
         <ul class="todos--list">
             <li
-                class="todo completed"
+                *ngFor="let todo of todos; let i = index;"
+                class="todo {{(todo.completed ? 'completed' : '')}}"
+                (click)="onToggle(i)"
             >
                 <div class="todo--toggle-btn"></div>
-                <div class="todo--content">This is Task #1 (not Completed)</div>
+                <div class="todo--content">{{todo.content}}</div>
             </li>
-            <li
-                class="todo "
-            >
-                <div class="todo--toggle-btn"></div>
-                <div class="todo--content">This is Task #1 (Completed)</div>
-            </li>
-            
         </ul>
         <div class="todos--footer">
             <h2 class="todos--count">Total tasks: <span>3</span></h2>
-            <a  href="#" class="todos--delete-btn">Clear Completed</a>
+            <a  
+                class="todos--delete-btn"
+                (click)="onDelete()"
+                
+            >Clear Completed</a>
         </div>
     </div>
 </div>
