@@ -1,0 +1,77 @@
+.input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+
+  max-width: 72rem;
+  margin: 0 auto;
+
+  transform: translateY(-50%);
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  background: #262626;
+  padding: 1.2rem 1.8rem;
+  border-radius: 8px;
+  color: #f2f2f2;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-out;
+}
+
+input:focus,
+input:active {
+  outline: none;
+  border: 1px solid #5c9929 !important;
+}
+
+input::placeholder {
+  color: #808080;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.3s ease-out;
+}
+
+input:focus::placeholder {
+  color: #5c9929;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  padding: 1rem 1.4rem;
+  background: #77bc3f;
+  border-radius: 8px;
+
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.icon-plus {
+  width: 1.6rem;
+  height: 1.6rem;
+  background: #f2f2f2;
+
+  mask-image: url(../../assets/icon-add-circle.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
+
+.btn-add:hover {
+  background: #5c9929;
+  transform: translateY(-2px);
+}
+
+.btn-add:active {
+  background-color: #77bc3f;
+  transform: translateY(-1px);
+}

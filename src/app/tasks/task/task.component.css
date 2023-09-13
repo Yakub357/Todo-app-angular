@@ -1,0 +1,85 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: #333;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.6rem;
+}
+
+.task:hover {
+  background-color: #3b3b3b;
+  border: 1px solid #3b3b3b;
+}
+
+.task-content {
+  font-size: 1.6rem;
+  width: 90%;
+  text-align: justify;
+  color: #f2f2f2;
+}
+
+.btn-toggle {
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  border-radius: 30px;
+
+  animation: all 0.3s ease-out;
+}
+
+.btn-toggle {
+  border: 2px solid #5c9929;
+  background: none;
+}
+
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-toggle div {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+
+  transition: all 0.2s ease-out;
+}
+
+.btn-toggle.btn-toggle-selected {
+  color: #f2f2f2;
+  background-color: #5c9929;
+  border: 3px solid #5c9929;
+}
+
+.btn-toggle.btn-toggle-selected div {
+  mask-image: url(../../../assets/icon-done.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background: #f2f2f2;
+}
+
+.btn-toggle.btn-toggle-selected ~ p {
+  text-decoration: line-through;
+  color: #808080;
+}
+
+.btn-delete {
+  cursor: pointer;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  mask-image: url(../../../assets/icon-delete.svg);
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background: #808080;
+
+  transition: all 0.2s ease-out;
+}
+
+.btn-delete:hover {
+  background: #e25858;
+}

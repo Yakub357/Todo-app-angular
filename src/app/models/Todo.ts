@@ -1,4 +1,4 @@
 export type Todo = {
-    content: string;
-    completed: boolean;
-}
+  content: string;
+  status: 'completed' | 'toComplete';
+};
