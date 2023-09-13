@@ -3,18 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { TodosComponent } from './components/todos.component';
+import { HeaderComponent } from './header/header.component';
+import { InputFieldComponent } from './input-field/input-field.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TaskComponent } from './tasks/task/task.component';
 
 @NgModule({
   declarations: [
-    AppComponent, 
-    TodosComponent
+    AppComponent,
+    HeaderComponent,
+    InputFieldComponent,
+    TasksComponent,
+    TaskComponent,
   ],
-  imports: [
-    BrowserModule, 
-    FormsModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
