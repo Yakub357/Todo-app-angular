@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { InputFieldComponent } from './input-field/input-field.component';
 import { TasksComponent } from './tasks/tasks.component';
 import { TaskComponent } from './tasks/task/task.component';
+import { TasksService } from './tasks.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { TaskComponent } from './tasks/task/task.component';
     TaskComponent,
   ],
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [TasksService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

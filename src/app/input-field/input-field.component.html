@@ -1,6 +1,12 @@
 <div class="input-group">
-  <input type="text" placeholder="Add a new Task" />
-  <a href="#" class="btn-add"
+  <input
+    type="text"
+    [required]="true"
+    placeholder="Add a new Task"
+    [(ngModel)]="inputText"
+    (keydown)="onEnterKeyPressed($event)"
+  />
+  <a href="#" class="btn-add" (click)="addTask()"
     >Create
     <div class="icon-plus"></div>
   </a>
