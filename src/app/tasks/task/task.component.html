@@ -1,7 +1,11 @@
 <div class="task">
-  <button class="btn-toggle">
+  <button
+    class="btn-toggle"
+    [ngClass]="{ 'btn-toggle-selected': task.status === 'completed' }"
+    (click)="onToggle()"
+  >
     <div></div>
   </button>
-  <p class="task-content">{{ content }} - {{ status }}</p>
-  <button class="btn-delete"></button>
+  <p class="task-content">{{ task.name }}</p>
+  <button class="btn-delete" (click)="onDelete()"></button>
 </div>
